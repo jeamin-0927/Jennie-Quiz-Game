@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="kr" id="html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>젠득이 퍼즐게임</title>
+    <link rel="stylesheet" href="https://chicken-moo.com/jennie/main.css">
+</head>
+<body link="black" alink="black" vlink="black" onclick="document.getElementById('q').focus();">
+    <div class="mid">
+        <a class="title">Q8. 데뷔 엘범 이름은?</a>
+        <br />
+        <a class="midtitle">(S _ _ _ _ _  O _ _)</a>
+        <br />
+        <br />
+        <style>
+            #q {
+                height: 40px;
+                width: 89%;
+                background-color: rgba( 255, 255, 255, 0 );
+                border: none;
+                font-size: 23px;
+            }
+
+                #q:focus {
+                    outline: none;
+                }
+
+            #asdf {
+                margin: -2px 7px -2px 0px;
+            }
+
+            #search_box {
+                border: 0px solid #f7a7bb;
+                height: 40px;
+                width: 100vw;
+                border-radius: 30px;
+                padding: 2.5px 0px 2.5px 0px;
+            }
+        </style>
+        <div id="search_box">
+            <input autocomplete="off" type="text" id="q" placeholder="답 입력" onkeyup="enterkey();">
+        </div>
+        <script>
+            document.getElementById('q').focus();
+            document.addEventListener('keydown', function (event) {
+                const name = document.getElementById('q').value;
+                if (name.toLowerCase() == "square one") {
+                    location.assign('./9');
+                }
+                if (event.keyCode === 13) {
+                    if (name.toLowerCase() == "square one") {
+                        location.assign('./9');
+                    }
+                    else {
+                        location.assign('./../no')
+                    }
+                };
+            }, true);
+        </script>
+
+
+    </div>
+</body>
+</html>

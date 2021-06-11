@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    font-family: 'Noto Serif KR', serif;
+    background: black;
+    color: #f7a7bb;
+    text-decoration: none;
+    outline: none;
+    font-size: 19px;
+    text-align: center;
+    margin: 0px;
+}
+
+.title {
+    font-size: 34px;
+}
+
+.midtitle {
+    font-size: 24px;
+}
+
+.bt {
+    border-radius: 30px;
+    background-color: #f7a7bb;
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.mid {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 100%
+}
+
+iframe {
+    display: inline;
+}
+
+.ft {
+    display: inline-block;
+}
+
+.bk {
+    text-align: left;
+}
