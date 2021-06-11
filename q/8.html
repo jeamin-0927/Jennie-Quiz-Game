@@ -41,23 +41,7 @@
         <div id="search_box">
             <input autocomplete="off" type="text" id="q" placeholder="답 입력" onkeyup="enterkey();">
         </div>
-        <script>
-            document.getElementById('q').focus();
-            document.addEventListener('keydown', function (event) {
-                const name = document.getElementById('q').value;
-                if (name.toLowerCase() == "square one") {
-                    location.assign('./9');
-                }
-                if (event.keyCode === 13) {
-                    if (name.toLowerCase() == "square one") {
-                        location.assign('./9');
-                    }
-                    else {
-                        location.assign('./../no')
-                    }
-                };
-            }, true);
-        </script>
+        <script type="text/javascript" src="js/8.js"></script>
 
 
     </div>

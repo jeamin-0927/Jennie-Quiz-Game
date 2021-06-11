@@ -38,24 +38,7 @@
         <div id="search_box">
             <input autocomplete="off" type="text" id="q" placeholder="답 입력" onkeyup="enterkey();">
         </div>
-        <script>
-            document.getElementById('q').focus();
-            document.addEventListener('keydown', function (event) {
-                const name = document.getElementById('q').value;
-                if (name == 163 * 45) {
-                    location.assign('./4');
-                }
-                if (event.keyCode === 13) {
-                    if (name == 163 * 45) {
-                        location.assign('./4');
-                    }
-                    else {
-                        location.assign('./../no')
-                    }
-                };
-            }, true);
-        </script>
-
+<script type="text/javascript" src="js/3.js"></script>
 
 
     </div>
